@@ -1,11 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,500&display=swap"
+    rel="stylesheet">
+
+    <link rel="icon" href="./images/Vector.svg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="./main.css">
+  <title>Plerby</title>
 </head>
+
 <body>
-  <h1>Hello Roman</h1>
+  <header class="header nav">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="#">
+          <img src="./images/Logo.svg" alt="Logo" class="header__logo--size">
+        </a>
+      </div>
+
+      <button type="button" class="header__button">
+        <img src="./images/Menu.svg" alt="Menu" class="header__button--menu">
+      </button>
+
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="https://www.plerdy.com/pricing/" target="_blank" class="nav__link">
+            Pricing
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="https://www.plerdy.com/use-cases/" target="_blank" class="nav__link">
+            Use Cases
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="https://www.plerdy.com/book-a-call/" target="_blank" class="nav__link">
+            Book a Demo
+          </a>
+        </li>
+      </ul>
+
+      <div class="header__buttons">
+        <a href="https://a.plerdy.com/auth/login" target="_blank" class="header__buttons--link">
+          Sign in
+        </a>
+
+        <button type="button" class="header__buttons--contact">Contact sales</button>
+      </div>
+    </div>
+  </header>
+
+  <article class="form-popup" id="myForm">
+    <div class="form-popup__container">
+      <div class="form-popup__image">
+        <img src="./images/PopupImage.png" alt="A man" class="form-popup__image--size">
+      </div>
+
+      <div class="form-popup__content">
+        <h1 class="form-popup__title">
+          How to do a Website Audit to Improve SEO & Conversions
+        </h1>
+
+        <p class="form-popup__paragraph">
+          You will get an SMS with a link to the webinar
+        </p>
+
+        <form action="#" method="post" class="form-popup__form">
+          <div>
+            <label for="name" class="form-popup__form--label">
+              Name
+            </label>
+
+            <div class="form-popup__input-container">
+              <input class="form-popup__form--name-text" type="text" placeholder="Boris Johnson" id="name">
+              <p class="form-popup__form--error form-popup__form--name-error">
+                Name is invalid
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <label for="tel" class="form-popup__form--label">
+              Label
+            </label>
+
+            <div class="form-popup__input-container">
+              <div class="form-popup__input--first">
+                <img src="./images/Flag.svg" alt="Flag" class="form-popup__input--image">
+                <span class="form-popup__number">+380</span>
+                <img src="./images/Arrow.svg" alt="Arrow" class="form-popup__arrow">
+              </div>
+
+              <input src="./images/Flag.svg" class="form-popup__form--label-text" type="tel" placeholder="XX XXX XXXX"
+                id="tel" min="9">
+
+              <p class="form-popup__form--error form-popup__form--tel-error">
+                Telefon number is invalid
+              </p>
+
+              <p class="form-popup__form--error form-popup__form--length-error">
+                Phone number length should be 9
+              </p>
+            </div>
+          </div>
+
+          <div class="form-popup__buttons">
+            <a href="https://www.plerdy.com/ua/contact-form/" target="_blank">
+              <button class="form-popup__support" type="button">Support</button>
+            </a>
+            <button class="form-popup__contact" type="submit">Contact Sales</button>
+          </div>
+        </form>
+
+        <button class="form-popup__close-button">&times;</button>
+
+        <div class="form-popup__conditions">
+          <input class="form-popup__conditions--check" type="checkbox">
+
+          <p class="form-popup__conditions--text">
+            By sending up? you agree to our
+            <a href="https://www.plerdy.com/terms-of-service/" class="form-popup__conditions--link" target="_blank">
+              Conditions
+            </a>
+            and
+            <a href="https://www.plerdy.com/privacy-policy/" class="form-popup__conditions--link" target="_blank">
+              Privacy Policy
+            </a>
+          </p>
+        </div>
+
+        <div class="form-popup__form--error-container">
+          <p class="form-popup__form--error form-popup__form--submit-error">
+            Submit please
+          </p>
+        </div>
+
+        <footer class="form-popup__footer">
+          <img src="./images/LogoFooter.svg" alt="LogoFooter">
+          <img src="./images/Powered by Plerdy.svg" alt="Powerde by">
+        </footer>
+      </div>
+    </div>
+  </article>
+
+  <div class="form-popup__SMS">
+    <button class="form-popup__SMS--close-button">&times;</button>
+    <p class="form-popup__SMS--size">Thanks for registration. You'll get SMS within 30 seconds</p>
+  </div>
+
+  <main class="main">
+    <section class="section about">
+      <div class="about__info">
+        <h1 class="about__title">
+          How to do a Website Audit to Improve SEO & Conversions
+        </h1>
+
+        <p class="about__paragraph1">
+          Usability auditing with the Plerdy tool is a comprehensive
+          expert assessment of your website based on a profound study of user behavior registered on it. Plerdy will
+          provide you with crucial data based on which you will be able to run an efficient usability audit of your
+          website, identify and fix SEO issues, and subsequently lead it to higher positions in search.
+        </p>
+
+        <p class="about__paragraph2">
+          Thus, you'll compile a list of flaws in your website interface, navigation, and conversion path that can
+          eventually affect its micro and macro conversion rates.
+        </p>
+
+        <div class="about__button">
+          <a href="https://www.plerdy.com/heatmap/" target="_blank">
+            <button class="about__button--info">
+              Run the Plerdy tool
+            </button>
+          </a>
+        </div>
+
+        <div class="about__trusted">
+          <p class="about__trusted--paragraph">
+            Trusted by some of the world's largest enterprises
+          </p>
+
+          <div class="about__trusted--images">
+            <div class="about__trusted--images-first">
+              <img src="./images/SoftServe.svg" alt="SoftServe" class="about__trusted--image">
+              <img src="./images/Subaru.svg" alt="Subaru" class="about__trusted--image">
+              <img src="./images/AnexTour.svg" alt="AnexTour" class="about__trusted--image about__trusted--image3">
+            </div>
+
+            <div class="about__trusted--images-second">
+              <img src="./images/Prom.svg" alt="Prom" class="about__trusted--image">
+              <img src="./images/UkrPost.svg" alt="UkrPost" class="about__trusted--image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__images">
+        <div class="about__images--container">
+          <img src="./images/Sales.png" alt="Sales" class="about__image-main">
+          <img src="./images/Schedule1.svg" alt="Schedule1" class="about__image1">
+          <img src="./images/Schedule2.svg" alt="Schedule2" class="about__image2">
+          <img src="./images/Schedule3.svg" alt="Schedule3" class="about__image3">
+        </div>
+      </div>
+    </section>
+
+    <section class="section reasons">
+      <div class="reasons__text--container">
+        <p class="reasons__text">
+          6 Reasons
+          <span style="color: #909090;">to Use Plerdy Data for a Website Usability Audit</span>
+        </p>
+
+        <div class="reasons__arrows">
+          <button type="button" class="reasons__arrow1">&xlarr;</button>
+          <button type="button" class="reasons__arrow2">&xrarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="section swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-slide__text">
+            <p class="swiper-slide__paragraph1">
+              You will benefit from our SaaS marketing product
+            </p>
+            <p class="swiper-slide__paragraph2">
+              Our team has developed a powerful tool to audit website content – a heatmap that
+              features more than 100 reports for e-marketers and business owners.
+            </p>
+          </div>
+
+          <div class="swiper-slide__bottom">
+            <p class="swiper-slide__bottom--paragraph">1</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-slide__text">
+            <p class="swiper-slide__paragraph1">
+              We have 10+ years of experience in digital marketing
+            </p>
+            <p class="swiper-slide__paragraph2">
+              The Plerdy team has rich experience in auditing, analyzing, and improving eCommerce websites
+              to boost their conversion rates. So we are well aware of all the weak spots of eCommerce websites
+              and know what data you need to run a usability audit of your website.
+            </p>
+          </div>
+  
+          <div class="swiper-slide__bottom">
+            <p class="swiper-slide__bottom--paragraph">2</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-slide__text">
+            <p class="swiper-slide__paragraph1">
+              We enable generating hypotheses about what leads to low website conversions
+            </p>
+            <p class="swiper-slide__paragraph2">
+              Thanks to the data gathered with the Plerdy heatmap about your website visitors’
+              behavior, you can generate hypotheses that potentially explain which functional flaws
+              and problems are causing a low conversion on your website and how.
+            </p>
+          </div>
+  
+          <div class="swiper-slide__bottom">
+            <p class="swiper-slide__bottom--paragraph">3</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-slide__text">
+            <p class="swiper-slide__paragraph1">
+              The analysis of the dynamic elements of the website
+            </p>
+            <p class="swiper-slide__paragraph2">
+              Some services disregard such an important aspect as the clickability analysis of the
+              dynamic elements when UX auditing, including drop-down menu, pop-up, and slider. However,
+              thanks to the unique Plerdy auditing functionality, you will receive this information.
+            </p>
+          </div>
+  
+          <div class="swiper-slide__bottom">
+            <p class="swiper-slide__bottom--paragraph">4</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-slide__text">
+            <p class="swiper-slide__paragraph1">
+              The analysis of both the desktop and mobile versions of the website
+            </p>
+            <p class="swiper-slide__paragraph2">
+              In some areas, websites generate more than 60% of the traffic from their mobile versions,
+              so it would be unwise not to audit the behavior of mobile users. With the Plerdy heatmap,
+              you can run a UX auditing analysis separately for the desktop and mobile versions of your
+              website.
+            </p>
+          </div>
+  
+          <div class="swiper-slide__bottom">
+            <p class="swiper-slide__bottom--paragraph">5</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-slide__text">
+            <p class="swiper-slide__paragraph1">
+              Audit data analysis with Google Analytics
+            </p>
+            <p class="swiper-slide__paragraph2">
+              In addition to the Plerdy heatmap data, you also get the audit data from Google Analytics. Thus,
+              you can analyze the sources of traffic and its quality to be able to pinpoint any problems. For
+              example, fixing usability bugs alone will not improve conversion if the website gets mistargeted
+              traffic.
+            </p>
+          </div>
+  
+          <div class="swiper-slide__bottom">
+            <p class="swiper-slide__bottom--paragraph">6</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__button">
+        <a href="https://www.plerdy.com/" target="_blank">
+          <button class="footer__button--info">
+            Boost my website conversion
+          </button>
+        </a>
+      </div>
+
+      <div class="footer__text--container">
+        <p class="footer__text">
+          So, it’s high time for you to stop losing 99% of potential clients due
+          to being unaware of your website users’ behavior patterns and needs.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module">
+  </script>
 </body>
+
 </html>

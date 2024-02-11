@@ -1,0 +1,132 @@
+.header {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 10px;
+}
+
+@media (min-width: 1024px) {
+  .header__container {
+    margin: 18px 0;
+    padding: 0 92px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__logo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__logo--size:hover {
+  transition: 0.5s ease;
+  scale: 1.2;
+}
+
+@media (min-width: 1024px) {
+  .header__logo--size {
+    height: 34px;
+    width: 140px;
+  }
+}
+
+.header__button {
+  border: 1px solid transparent;
+  background-color: #FFF;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.header__button::before {
+  content: 'CONTACT US';
+  position: absolute;
+  top: 20%;
+  left: -70px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: #5D78FF;
+  font-size: 10px;
+}
+
+.header__button:hover::before {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.header__button--menu:hover {
+  transition: 0.5s ease;
+  scale: 1.2;
+}
+
+.nav__list {
+  display: none;
+  list-style-type: none;
+}
+
+@media (min-width: 1024px) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #7D7D7D;
+}
+
+.nav__item:hover {
+  transition: 0.5s ease;
+  scale: 1.2;
+}
+
+.header__buttons {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.header__buttons--link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #5D78FF;
+}
+
+.header__buttons--link:hover {
+  text-decoration: underline;
+}
+
+.header__buttons--contact {
+  cursor: pointer;
+  background-color: #5D78FF;
+  height: 41px;
+  width: 149px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.header__buttons--contact:hover {
+  transition: 0.5s ease;
+  scale: 1.1;
+}
