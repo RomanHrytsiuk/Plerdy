@@ -14,4 +14,4 @@ Mobile (> 320px)
 Laptop 1024px
 
 [DEMO LINK](https://romanhrytsiuk.github.io/Plerdy/src/)
-[Kickstarter Layout](https://github.com/RomanHrytsiuk/Plerdy)
+[Plerdy Layout](https://github.com/RomanHrytsiuk/Plerdy)
